@@ -112,16 +112,4 @@ savanna-ops-wild-rescue/
    └─ style.css
 ```
 
-## Revisi 3
 
-- Scope sniper diperbaiki: mesh senjata disembunyikan saat scope aktif supaya lensa/bodi tidak menutup target. Reticle putih dibuat lebih tipis, lebih presisi, dan tepat di pusat raycast kamera.
-- Minimap dipindahkan ke bawah kiri layar.
-- Model pemburu fallback dibuat lebih realistis: pakaian taktis, balaclava, helm, goggles, vest, pouch, sepatu, sarung tangan, rifle, dan detail camo.
-- Suara sniper diganti menjadi efek procedural yang lebih berat: crack tajam, low boom, mechanical click, dan echo/tail pendek.
-
-## Revisi 4
-
-- Minimap dipaksa berada di pojok bawah kiri dengan override `inset/top/right`, karena rule global `canvas` sebelumnya masih menyisakan posisi atas pada canvas minimap.
-- Jarak tembak sniper dart dinaikkan sampai 430 meter. Selain raycast mesh langsung, ditambahkan long-range hit assist kecil saat scope aktif agar target jauh tetap bisa terkena jika reticle tepat di badan/kepala musuh.
-- Musik game dibuat dinamis/adaptif: mode Explore, Tension, Combat, Danger, dan Extraction. Musik otomatis berubah saat dekat objective, musuh mendeteksi player, health rendah, atau semua satwa sudah aman.
-- Ditambahkan badge status musik di HUD dan opsi Dynamic Music On/Off di Pengaturan.
